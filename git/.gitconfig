@@ -14,8 +14,8 @@
     ap = add . -p
     brr = for-each-ref --sort=committerdate refs/heads/ --format='%(color: green)%(committerdate:short) %(color: cyan)%(refname:short)'
     brs = for-each-ref refs/heads/ --format='%(color: green)%(committerdate:short) %(color: cyan)%(refname:short)'
-	ds = diff --staged
-	d = diff
+    ds = diff --staged
+    d = diff
 [core]
     quotepath = false
 [rerere]
