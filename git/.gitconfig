@@ -16,6 +16,11 @@
     brs = for-each-ref refs/heads/ --format='%(color: green)%(committerdate:short) %(color: cyan)%(refname:short)'
     ds = diff --staged
     d = diff
+# # Place projects hosted on your github in a specific folder and add a ".gitignore_include"-file to the root
+# # with a [user] tag containing your anonymized github email.
+# # Read more: https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address
+# [includeIf "gitdir:~/Path/To/Somewhere"]
+#     path = ~/source/github/.gitconfig_include
 [core]
     quotepath = false
 [rerere]
